@@ -44,34 +44,3 @@ study-material-platform/
 ✅ PDF resources (videos & quizzes in future updates)  
 ✅ Secure and scalable backend with Supabase  
 
-## 🔧 Setup Instructions
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/study-material-platform.git
-   ```
-2. Navigate to the project folder:
-   ```sh
-   cd study-material-platform
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Set up environment variables (`.env` file):
-   ```
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
-5. Run the development server:
-   ```sh
-   npm run dev
-   ```
-6. Open the app in your browser at `http://localhost:5173`
-
-## 📜 License
-This project is licensed under the MIT License.
-
----
-
-🚀 *Happy Coding!*
-
