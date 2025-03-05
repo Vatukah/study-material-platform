@@ -1,0 +1,58 @@
+header {
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  box-sizing: border-box;
+}
+header .logo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .logo img {
+  width: 1.85rem;
+}
+header .logo .logo-name {
+  font-size: large;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* active of a nav*/
+.active {
+  display: block;
+  background-color: color-mix(
+    in oklab,
+    var(--accent-light) 30%,
+    #e0e0e000 70%
+  );
+  border-radius: var(--radius-md);
+}
+.navHover{
+  position: relative;
+}
+.navHover:hover {
+  display: block;
+  background-color: color-mix(
+    in oklab,
+    var(--accent-light) 20%,
+    #e0e0e000 80%
+  );
+  border-radius: var(--radius-md);
+}
+
+nav[data-expanded="false"] .navHover:hover::before{
+ content: attr(data-content);
+ display: block;
+ width:max-content ;
+ padding-inline: var(--spacing-sm);
+ border-radius: var(--radius-sm);
+ background-color: var(--text);
+ color: var(--primary);
+ position: absolute;
+ right: -40%;
+ top:50%;
+ transform: translateX(100%)  translateY(-50%);
+ box-shadow: var(--shadow-lg);
+}

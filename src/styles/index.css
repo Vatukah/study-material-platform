@@ -1,68 +1,71 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+  /* 🎨 Color Palette */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 2.5rem; /* 40px */
+
+  /* 🔠 Typography */
+  --font-inter: "Inter", sans-serif;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+
+  /*line height*/
+  --leading-line-height: 1.6;
+  /* 🎨 Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-xxl: 24px;
+
+  --shadow-sm: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0px 6px 16px rgba(0, 0, 0, 0.16);
+}
+@utility accent {
+  background-color: var(--accent);
+}
+@utility accent-light {
+  background-color: var(--accent-light);
+}
+@utility text-accent-light {
+  color: var(--accent-light);
+}
+@utility primary-bg{
+  background-color:var(--primary);
+}
+@utility primary-bg-dark{
+  background-color:var(--primary-dark);
+}
+@utility text {
+   
+    color:var(--text)
+   
+}
+.light {
+  --accent: #6767f0;
+  --accent-light: #8d8dff;
+  --accent-dark: #4242c0;
+  --primary: #f5f5f5;
+  --primary-dark: #e0e0e0;
+  --bg-blur-color: #e0e0e0b3;
+  --text:#1c1c1c;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.dark {
+  --accent: #6767f0;
+  --accent-light: #8d8dff;
+  --accent-dark: #4242c0;
+  --primary: #1c1c1c;
+  --primary-dark: #111111;
+  --bg-blur-color: #111111b3;
+  --text:#f5f5f5;
 }
