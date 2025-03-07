@@ -14,7 +14,7 @@ import NavItem from "./navItem";
 import '../component.css';
 
 export default function Navbar() {
-  const [isExpand, setIsExpand] = useState(false);
+  const [isExpand, setIsExpand] = useState(true);
   const navRef = useRef(null)
 
   const navigationLinks = [

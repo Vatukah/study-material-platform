@@ -12,17 +12,27 @@ html, body {
   height: 100vh;
   background-color: var(--bg-blur-color);
   backdrop-filter: blur(32px);
- 
+  color: var(--text);
 }
 
 body::before {
   content: "";
   position: absolute;
-  top: -20%;
-  left: -20%;
+  top: -10%;
+  left: -10%;
   width: 400px;
   aspect-ratio: 1/1;
-  background-color: var(--accent-light);
-  border-radius: 50%;
+  background-color:  rgb(var(--accent-light));
+  border-radius: 100%;
   pointer-events: none; /* Prevents interfering with interactions */
 }
+/* main::-webkit-scrollbar{
+  width: .45rem;
+ 
+}
+
+main::-webkit-scrollbar-thumb{
+  width: 100%;
+  background-color: rgb(var(--accent-light));
+  border-radius: var(--radius-lg);
+} */

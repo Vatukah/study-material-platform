@@ -3,6 +3,10 @@ header {
   padding-inline: 1rem;
   padding-block: 0.5rem;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
 }
 header .logo {
   width: fit-content;
@@ -17,6 +21,7 @@ header .logo .logo-name {
   font-size: large;
   font-weight: 600;
   letter-spacing: 0.5px;
+  color: var(--text);
 }
 
 /* active of a nav*/
@@ -24,7 +29,7 @@ header .logo .logo-name {
   display: block;
   background-color: color-mix(
     in oklab,
-    var(--accent-light) 30%,
+    rgb(var(--accent-light)) 30%,
     #e0e0e000 70%
   );
   border-radius: var(--radius-md);
@@ -36,7 +41,7 @@ header .logo .logo-name {
   display: block;
   background-color: color-mix(
     in oklab,
-    var(--accent-light) 20%,
+    rgb(var(--accent-light)) 20%,
     #e0e0e000 80%
   );
   border-radius: var(--radius-md);
