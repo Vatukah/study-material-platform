@@ -5,6 +5,8 @@ html, body {
   min-height: 100vh;
   overflow: hidden; /* Prevent unwanted scroll */
  background-color: var(--primary-dark);
+ color: var(--text);
+
 }
 
 #root {

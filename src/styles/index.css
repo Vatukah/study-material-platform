@@ -47,6 +47,9 @@
 @utility text-accent-light {
   color: rgb(var(--accent-light));
 }
+@utility text-accent-dark {
+  color: var(--accent-dark);
+}
 @utility primary-bg{
   background-color:var(--primary);
 }
